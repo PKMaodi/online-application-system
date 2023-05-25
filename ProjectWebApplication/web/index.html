@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body{
+              background-image: url("img/tachy.png");
+            }
+        .navbar {
+  display: flex;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 20px;
+  position: relative;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;  
+  transition: width 0.3s;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="admin_login.jsp">Administrator</a></li>
+                <li><a href="new_application.jsp">Apply!</a></li>
+                <li><a href="applicant_login.jsp">Admission status</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
